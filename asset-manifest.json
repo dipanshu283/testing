@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tictalk/static/css/main.dcfef923.css",
-    "main.js": "/tictalk/static/js/main.a2fa9c4b.js",
+    "main.js": "/tictalk/static/js/main.769e5059.js",
     "static/js/787.64960afd.chunk.js": "/tictalk/static/js/787.64960afd.chunk.js",
     "index.html": "/tictalk/index.html",
     "main.dcfef923.css.map": "/tictalk/static/css/main.dcfef923.css.map",
-    "main.a2fa9c4b.js.map": "/tictalk/static/js/main.a2fa9c4b.js.map",
+    "main.769e5059.js.map": "/tictalk/static/js/main.769e5059.js.map",
     "787.64960afd.chunk.js.map": "/tictalk/static/js/787.64960afd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcfef923.css",
-    "static/js/main.a2fa9c4b.js"
+    "static/js/main.769e5059.js"
   ]
 }
