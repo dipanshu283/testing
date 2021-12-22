@@ -2,13 +2,13 @@
 import React from 'react';
 import { ChatEngine } from 'react-chat-engine';
 import ChatFeed from './component/ChatFeed';
-// import LoadingForm from './component/LoadingForm';
+import LoadingForm from './component/LoadingForm';
 import './App.css';
 
 
 export function App() {
 
-	// if(!localStorage.getItem('username')) return <LoadingForm/>
+	if(!localStorage.getItem('username')) return <LoadingForm/>
 	return (
 		<ChatEngine
 		height='100vh'
