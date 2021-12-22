@@ -1,17 +1,26 @@
 
+import React from 'react';
+import { ChatEngine } from 'react-chat-engine';
+import ChatFeed from './component/ChatFeed';
+// import LoadingForm from './component/LoadingForm';
 import './App.css';
 
-function App() {
-  return (
-    <>
-    <div className="App">
-   <h1>hello react</h1>
-   <p>this is para for testing update check up</p>
-   <p>hello agian</p>
-   <p>hehe hello</p>
-    </div>
-    </>
-  );
+
+export function App() {
+
+	// if(!localStorage.getItem('username')) return <LoadingForm/>
+	return (
+		<ChatEngine
+		height='100vh'
+		userName={localStorage.getItem('username')}
+		userSecret={localStorage.getItem('secret')}
+		projectID='22d4bae1-7b87-429d-9ce8-c98bc7100c44'
+      renderChatFeed={(chatAppState) => <ChatFeed {...chatAppState} />}
+	  onNewMessage = {()=> new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
+		/>
+	);
 }
 
 export default App;
+
+
