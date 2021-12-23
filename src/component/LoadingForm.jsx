@@ -5,6 +5,7 @@ import axios from "axios";
 function LoadingForm(props) {
     const [username, setusername] = useState("");
   const [secret, setsecret] = useState("");
+  const [error , seterror] = useState(null);
 
     const handleSubmit= async (e)=>{
         e.preventDefault();
@@ -17,6 +18,7 @@ function LoadingForm(props) {
            window.location.reload();
         }
         catch(error){
+          seterror("Oops 🙄, incorrect credentials.")
 
         }
     }
@@ -49,7 +51,9 @@ function LoadingForm(props) {
               <button className="button">
                   <span>Start Chatting</span>
               </button>
+              <p className="error"> {error}</p>
           </div>
+          
         </form>
       </div>
     </div>

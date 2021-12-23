@@ -9,7 +9,10 @@ import './App.css';
 export function App() {
 
 	if(!localStorage.getItem('username')) return <LoadingForm/>
+
 	return (
+
+
 		<ChatEngine
 		height='100vh'
 		userName={localStorage.getItem('username')}

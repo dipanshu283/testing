@@ -1,0 +1,14 @@
+  <div>
+        {isFirstMessage && <> 
+         {date===getDateBySend ? <> <div style={{margin:"30px"}}>
+            <span style={{ marginLeft: "40%", position: "relative" }}>
+              <p className="SendDate" style={{display:"inline"}}>Today</p>
+            </span>
+          </div> </> :<> <div>
+            <span style={{ marginLeft: "40%", position: "relative" }}>
+            <p className="SendDate" style={{display:"inline"}}>{getDateBySend}/{getmonthBySend}/{getyearBySend}</p>
+              
+            </span>
+          </div></>}    
+       </>}
+      </div>
